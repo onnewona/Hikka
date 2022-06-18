@@ -29,7 +29,8 @@ class InfomodMod(loader.Module):
         "version": "Soso-versiyasi",
         "soso_update": "◍ soso-yangilash",
         "soso_chat": "◍ soso-guruh",
-        "soso_platforma": "◽ <b>Soso-platforma</b>",
+        "soso_admin": "◽ Soso-Owner: Temur Erkinov",
+        "soso_platforma": "◽ <b>Soso-Platforma</b>",
         "soso_userbot": "◽ <b>Soso-Userbot (◕ᴗ◕✿)</b>",
         "soso_einstein": "◽ <b>Ommaviy userbot emas:</b> shaxsiy didga moslangan hamda boshqaruvi oʻz xatti-harakatlarimga bogʻliq.",
         "_cfg_cst_msg": "Ma'lumot uchun maxsus xabar. O'z ichiga olishi mumkin {me}, {version}, {build}, {prefix}, {platform}",
@@ -42,7 +43,7 @@ class InfomodMod(loader.Module):
         "version": "Soso-версия",
         "soso_update": "◍ soso-обновить",
         "soso_chat": "◍ soso-группа",
-        "soso_platforma": "◽ <b>Soso-платформа</b>",
+        "soso_platforma": "◽ <b>Soso-Платформа</b>",
         "soso_userbot": "◽ <b>Soso-Юзербот (◕ᴗ◕✿)</b>",
         "soso_einstein": "◽ <b>Не публичный юзербот:</b> адаптирован под личный вкус и управление зависит от моего поведения.",
         "_cfg_cst_msg": "Специальное информационное сообщение. Может включать {me}, {version}, {build}, {prefix}, {platform}",
@@ -51,12 +52,17 @@ class InfomodMod(loader.Module):
     }
 
 
+    async def _soso_info(self, message):
+        """info"""
+        await message.edit("info")
+        return
+
     def __init__(self):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "custom_message",
                 doc=lambda: self.strings("_cfg_cst_msg"),
-            ),
+            ),           
             loader.ConfigValue(
                 "custom_button12",
                 ["soso", "https://t.me/+5o1a-UjPfCZhNmE5"],
@@ -122,6 +128,10 @@ class InfomodMod(loader.Module):
             None
             if not self.config["custom_button12"]
             else [
+            {"text": f"{self.strings('soso_admin')}",
+             "callback": self._soso_info,
+            }],
+            [
             {"text": f"{self.strings('soso_chat')}",
              "url": "https://t.me/+5o1a-UjPfCZhNmE5",
             },   
