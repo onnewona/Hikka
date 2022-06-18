@@ -216,7 +216,7 @@ class Gallery(InlineUnit):
             try:
                 status_message = await (
                     message.edit if message.out else message.respond
-                )("🌘 <b>Loading inline gallery...</b>")
+                )("<b>◍ soso gallery...</b>")
             except Exception:
                 status_message = None
         else:
