@@ -321,9 +321,9 @@ class CoreMod(loader.Module):
 
         await utils.answer(
             message,
-            self.strings("lang_saved" + f"<code>{args}</code>").format(
+            self.strings("lang_saved").format(
                 utils.get_lang_flag(args.lower() if args.lower() != "en" else "gb")
-            ),
+            ) + f"<code>{args}</code>",
         )
 
     @loader.owner
