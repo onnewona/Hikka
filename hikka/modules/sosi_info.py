@@ -29,9 +29,9 @@ class InfomodMod(loader.Module):
         "version": "Soso-versiyasi",
         "soso_update": "◍ soso-yangilash",
         "soso_chat": "◍ soso-guruh",
-        "soso_platforma": "Soso-platforma",
-        "soso_userbot": "<b>◍ Soso-Userbot (◕ᴗ◕✿) soso</b>",
-        "soso_einstein": "<b>◍ <u>Eynshteyn</u> teoriyasi (ʘᴗʘ✿):</b> temurni soso'si top",
+        "soso_platforma": "◽ <b>Soso-platforma</b>",
+        "soso_userbot": "◽ <b>Soso-Userbot (◕ᴗ◕✿)</b>",
+        "soso_einstein": "◽ <b>Ommaviy userbot emas:</b> shaxsiy didga moslangan hamda boshqaruvi oʻz xatti-harakatlarimga bogʻliq.",
         "_cfg_cst_msg": "Ma'lumot uchun maxsus xabar. O'z ichiga olishi mumkin {me}, {version}, {build}, {prefix}, {platform}",
         "_cfg_cst_btn": "Ma'lumot uchun maxsus tugma. O'chirish uchun tugmani bo'sh qoldiring",
         "_cfg_banner": "Rasm bannerini oʻchirish uchun “True” ni oʻrnating",
@@ -42,9 +42,9 @@ class InfomodMod(loader.Module):
         "version": "Soso-версия",
         "soso_update": "◍ soso-обновить",
         "soso_chat": "◍ soso-группа",
-        "soso_platforma": "Soso-платформа",
-        "soso_userbot": "<b>◍ Soso-Юзербот (◕ᴗ◕✿) soso</b>",
-        "soso_einstein": "<b>◍ Теория <u>Эйнштейна</u> (ʘᴗʘ✿):</b> soso темура топ из топов",
+        "soso_platforma": "◽ <b>Soso-платформа</b>",
+        "soso_userbot": "◽ <b>Soso-Юзербот (◕ᴗ◕✿)</b>",
+        "soso_einstein": "◽ <b>Не публичный юзербот:</b> адаптирован под личный вкус и управление зависит от моего поведения.",
         "_cfg_cst_msg": "Специальное информационное сообщение. Может включать {me}, {version}, {build}, {prefix}, {platform}",
         "_cfg_cst_btn": "Специальная кнопка для информации. Оставьте кнопку пустой, чтобы отключить ее.",
         "_cfg_banner": "Установите True, чтобы удалить баннер с изображением",
@@ -112,7 +112,7 @@ class InfomodMod(loader.Module):
             if self.config["custom_message"] and self.config["custom_message"] != "no"
             else (
                 f"{self.strings('soso_userbot')}\n"
-                f"<b>◍ {self.strings('soso_platforma')}</b> <code>{platform}</code>"
+                f"{self.strings('soso_platforma')} {platform}"
                 f"\n\n{self.strings('soso_einstein')}"
             )
         )
@@ -139,7 +139,7 @@ class InfomodMod(loader.Module):
             text=self._render_info(),
             reply_markup=self._get_mark(),
             **(
-                {"photo": "https://i.imgur.com/8HGlbdA.jpeg"}
+                {"photo": "https://i.imgur.com/HhQTGwJ.jpeg"}
                 if not self.config["disable_banner"]
                 else {}
             ),
