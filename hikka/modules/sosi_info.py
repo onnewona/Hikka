@@ -112,8 +112,6 @@ class InfomodMod(loader.Module):
             if self.config["custom_message"] and self.config["custom_message"] != "no"
             else (
                 f"{self.strings('soso_userbot')}\n"
-                f'<b>◍ {self.strings("owner")}</b> ◍ <a href="tg://user?id={self._me.id}">{me}</a>\n'
-                f"<b>◍ {self.strings('version')}</b> ◍ <code>{version}</code> <a href='{build}'></a>\n"
                 f"<b>◍ {self.strings('soso_platforma')}</b> <code>{platform}</code>"
                 f"\n\n{self.strings('soso_einstein')}"
             )
@@ -141,7 +139,7 @@ class InfomodMod(loader.Module):
             text=self._render_info(),
             reply_markup=self._get_mark(),
             **(
-                {"photo": "https://te.legra.ph/file/695db61e0d6e83fcb7953.jpg"}
+                {"photo": "https://i.imgur.com/8HGlbdA.jpeg"}
                 if not self.config["disable_banner"]
                 else {}
             ),
