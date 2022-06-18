@@ -1,24 +1,12 @@
-# █ █ ▀ █▄▀ ▄▀█ █▀█ ▀    ▄▀█ ▀█▀ ▄▀█ █▀▄▀█ ▄▀█
-# █▀█ █ █ █ █▀█ █▀▄ █ ▄  █▀█  █  █▀█ █ ▀ █ █▀█
-#
-#              © Copyright 2022
-#
-#          https://t.me/hikariatama
-#
-# 🔒 Licensed under the GNU GPLv3
-# 🌐 https://www.gnu.org/licenses/agpl-3.0.html
-
 import itertools
 import logging
 from traceback import format_exc
 from types import ModuleType
 import os
-
 import telethon
 from meval import meval
 from telethon.errors.rpcerrorlist import MessageIdInvalidError
 from telethon.tl.types import Message
-
 from .. import loader, main, utils
 from ..inline.types import InlineCall
 
@@ -41,8 +29,8 @@ class PythonMod(loader.Module):
 
     strings = {
         "name": "Python",
-        "eval": "<b>🎬 Code:</b>\n<code>{}</code>\n<b>🪄 Result:</b>\n<code>{}</code>",
-        "err": "<b>🎬 Code:</b>\n<code>{}</code>\n\n<b>🚫 Error:</b>\n<code>{}</code>",
+        "eval": "◽ <b>Code:</b>\n<code>{}</code>\n<b>◽ Result:</b>\n<code>{}</code>",
+        "err": "◽ <b>Code:</b>\n<code>{}</code>\n\n<b>◽ Error:</b>\n<code>{}</code>",
         "db_permission": (
             "⚠️ <b>Do not use </b><code>db.set</code><b>, </b><code>db.get</code><b> "
             "and other db operations. You have core modules to control anything you "
@@ -54,8 +42,8 @@ class PythonMod(loader.Module):
     }
 
     strings_ru = {
-        "eval": "<b>🎬 Код:</b>\n<code>{}</code>\n<b>🪄 Результат:</b>\n<code>{}</code>",
-        "err": "<b>🎬 Код:</b>\n<code>{}</code>\n\n<b>🚫 Ошибка:</b>\n<code>{}</code>",
+        "eval": "◽ <b>Код:</b>\n<code>{}</code>\n<b>◽ Результат:</b>\n<code>{}</code>",
+        "err": "◽ <b>Код:</b>\n<code>{}</code>\n\n<b>◽ Ошибка:</b>\n<code>{}</code>",
         "db_permission": (
             "⚠️ <b>Не используй </b><code>db.set</code><b>, </b><code>db.get</code><b> "
             "и другие операции с базой данных. У тебя есть встроенные модуля для управления ей</b>\n\n"
