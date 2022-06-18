@@ -14,12 +14,12 @@ class UpdateNotifierMod(loader.Module):
 
     strings = {
         "name": "UpdateNotifier",
-        "update_required": "◍ <b>Soso</b> <s>{}</s> -> {}\n\n{}",
+        "update_required": "◍ Soso yangilandi\n◍ <b>Soso</b> <s>{}</s> -> {}\n\n{}",
         "more": "\n<i><b>◍ info {}...</b></i>",
     }
 
     strings_ru = {
-        "update_required": "◍ <b>Soso</b> <s>{}</s> -> {}\n\n{}",
+        "update_required": "◍ Soso обновлён\n◍ <b>Soso</b> <s>{}</s> -> {}\n\n{}",
         "more": "\n<i><b>◍ инфа {}...</b></i>",
     }
 
