@@ -28,7 +28,7 @@ class CoreMod(loader.Module):
         "db_cleared": "<b>✅ Database cleared</b>",
         "hikka": "🌘 <b>Hikka userbot</b>\n<b>Version: {}.{}.{}</b>",
         "check_url": "🚫 <b>You need to specify valid url containing a langpack</b>",
-        "lang_saved": "{} <b>Language saved!</b>",
+        "lang_saved": "◽ <b>Language saved:</b> {}",
         "pack_saved": "✅ <b>Translate pack saved!</b>",
         "incorrect_language": "🚫 <b>Incorrect language specified</b>",
         "lang_removed": "✅ <b>Translations reset to default ones</b>",
@@ -57,7 +57,7 @@ class CoreMod(loader.Module):
         "db_cleared": "<b>✅ База очищена</b>",
         "hikka": "🌘 <b>Hikka userbot</b>\n<b>Версия: {}.{}.{}</b>",
         "check_url": "🚫 <b>Укажи правильную ссылку, ведущую на пак с переводом</b>",
-        "lang_saved": "{} <b>Язык сохранен!</b>",
+        "lang_saved": "◽ <b>Язык сохранен:</b> {}",
         "pack_saved": "✅ <b>Пак перевода сохранен!</b>",
         "incorrect_language": "🚫 <b>Указан неверный язык</b>",
         "lang_removed": "✅ <b>Переводы сброшены</b>",
@@ -321,7 +321,7 @@ class CoreMod(loader.Module):
 
         await utils.answer(
             message,
-            self.strings("lang_saved").format(
+            self.strings("lang_saved" + f"<code>{args}</code>").format(
                 utils.get_lang_flag(args.lower() if args.lower() != "en" else "gb")
             ),
         )
