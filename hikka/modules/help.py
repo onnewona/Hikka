@@ -54,25 +54,25 @@ class HelpMod(loader.Module):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
                 "core_emoji",
-                "◉",
+                "◽",
                 lambda: "Core module bullet",
                 validator=loader.validators.String(length=1),
             ),
             loader.ConfigValue(
                 "soso_emoji",
-                "◍",
+                "◽",
                 lambda: "Hikka-only module bullet",
                 validator=loader.validators.String(length=1),
             ),
             loader.ConfigValue(
                 "plain_emoji",
-                "◉",
+                "◽",
                 lambda: "Plain module bullet",
                 validator=loader.validators.String(length=1),
             ),
             loader.ConfigValue(
                 "empty_emoji",
-                "◕",
+                "◽",
                 lambda: "Empty modules bullet",
                 validator=loader.validators.String(length=1),
             ),
