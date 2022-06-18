@@ -130,14 +130,7 @@ class InfomodMod(loader.Module):
             else [
             {"text": f"{self.strings('soso_admin')}",
              "callback": self._soso_info,
-            }],
-            [
-            {"text": f"{self.strings('soso_chat')}",
-             "url": "https://t.me/+5o1a-UjPfCZhNmE5",
-            },   
-            {"text": f"{self.strings('soso_update')}",
-             "url": "http://t.me/share/url?url=.update --force",
-            },         
+            },
           ]
         )
 
