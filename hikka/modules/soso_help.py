@@ -162,7 +162,7 @@ class HelpMod(loader.Module):
 
         reply = self.strings("single_mod_header").format(utils.escape_html(name))
         if module.__doc__:
-            reply += soso + "<b>Info:</b> <i>" + utils.escape_html(inspect.getdoc(module)) + "\n</i>"
+            reply += "\n" + soso + "<b>Info:</b> <i>" + utils.escape_html(inspect.getdoc(module)) + "\n</i>"
 
         commands = {
             name: func
