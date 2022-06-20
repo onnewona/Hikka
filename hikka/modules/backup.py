@@ -39,7 +39,7 @@ class BackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self._tg_id,
-                photo="https://te.legra.ph/file/d1e23d96b083c9a3a388d.jpg",
+                photo="https://i.imgur.com/vMYZQ1F.jpeg",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
