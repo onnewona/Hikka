@@ -352,7 +352,7 @@ class HelpMod(loader.Module):
        "text": f"{self.strings('soso_userbot')}", 
        "callback": self._temur,
       }],      
-           ],
+           ], {"photo": "http://f0664355.xsph.ru/img/info_post.png"},
                     ttl=10,
                     message=message,
                 )
