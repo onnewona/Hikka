@@ -142,7 +142,7 @@ class InfomodMod(loader.Module):
             text=self._render_info(),
             reply_markup=self._get_mark(),
             **(
-                {"photo": "https://i.imgur.com/vs4xDKf.jpeg"}
+                {"photo": "http://f0664355.xsph.ru/img/info_post.png"}
                 if not self.config["disable_banner"]
                 else {}
             ),
