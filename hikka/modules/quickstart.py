@@ -17,29 +17,10 @@ from ..inline.types import InlineCall
 
 logger = logging.getLogger(__name__)
 imgs = [
-    "https://pa1.narvii.com/6644/16e88ec137d2ad2583937e7909b6a166c70f3f2a_hq.gif",
-    "https://c.tenor.com/O3qIam1dAQQAAAAC/hug-cuddle.gif",
-    "https://pa1.narvii.com/6853/8efac13a077dac28e6a500a5dd2a7f97dec668fd_hq.gif",
-    "https://static.tumblr.com/ef1af4bfc7f5a5be30a24539d536e1ce/cehtffd/k3Hpiifhs/tumblr_static_tumblr_static__focused_v3.gif",
-    "https://i.gifer.com/W9IO.gif",
-    "https://c.tenor.com/6w7XKLSqFEUAAAAC/anime-hug.gif",
-    "https://i2.wp.com/metanorn.net/wp-content/uploads/2011/08/NS3-04b.gif",
+    "http://f0664355.xsph.ru/img/info_post.png",
 ]
 
-TEXT = """🌘🇬🇧 <b>Hello.</b> You've just installed <b>Hikka</b> userbot.
-
-❓ <b>Need help?</b> Feel free to join our support chat. We help <b>everyone</b>.
-
-📼 <b>Official modules sources:</b>
-▫️ @hikarimods
-▫️ @hikarimods_database
-▫️ <code>.dlmod</code>
-
-✅ <b>Trusted modules' developers:</b>
-▫️ @morisummermods
-▫️ @cakestwix_mods
-
-"""
+TEXT = """◽ <b>Premium-Userbot</b> - bepul va sifatli."""
 
 
 TEXT_RU = """🌘🇷🇺 <b>Привет.</b> Твой юзербот <b>Hikka</b> установлен.
