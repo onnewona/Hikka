@@ -55,7 +55,7 @@ class InlineStuffMod(loader.Module):
 
         await message.delete()
 
-        m = await message.respond("<b>premium gallery...</b>")
+        m = await message.respond("<b>◽ premium gallery...</b>")
 
         await self.inline.gallery(
             message=m,
