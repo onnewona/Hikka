@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://i.imgur.com/bnCIR0K.jpeg"
+        "http://f0664355.xsph.ru/img/info_post.png"
     ).content
 )
 photo.name = "avatar.png"
@@ -48,14 +48,14 @@ class TokenObtainment(InlineUnit):
                 else:
                     # Generate and set random username for bot
                     uid = utils.rand(6)
-                    username = f"@soso_o_bot"
+                    username = f"@premium_userbot"
             else:
                 # Generate and set random username for bot
                 uid = utils.rand(6)
-                username = f"@soso_o_bot"
+                username = f"@premium_userbot"
 
             for msg in [
-                f"◍ soso ◍"[:64],
+                f"◍ Premium-Userbot ◍"[:64],
                 username,
                 "/setuserpic",
                 username,
@@ -149,7 +149,7 @@ class TokenObtainment(InlineUnit):
                         "hikka.inline",
                         "custom_bot",
                         False,
-                    ) and not re.search(r"@soso_o_bot", button.text):
+                    ) and not re.search(r"@premium_userbot", button.text):
                         continue
 
                     m = await conv.send_message(button.text)
@@ -192,7 +192,7 @@ class TokenObtainment(InlineUnit):
                     for msg in [
                         "/setinline",
                         button.text,
-                        "sosooooooo",
+                        "premium...",
                         "/setinlinefeedback",
                         button.text,
                         "Enabled",
