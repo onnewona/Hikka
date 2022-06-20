@@ -35,15 +35,15 @@ class UpdaterMod(loader.Module):
 
     strings = {
         "name": "Updater",
-        "source": "◍ <b>Read the source code from</b> <a href='{}'>here</a>",
-        "restarting_caption": "◍ <b>Restarting...</b>",
-        "downloading": "◍ <b>Downloading updates...</b>",
-        "installing": "◍ <b>Installing updates...</b>",
-        "success": "◍ <b>Restart successful! {}</b>\n<i>But still loading modules...</i>\n<i>Restart took {}s</i>",
+        "source": "◽ <b>Repos quyida:</b> <a href='{}'>here</a>",
+        "restarting_caption": "◽ <b>sosolanmoqda...</b>",
+        "downloading": "◽ <b>yangilanmoqda...</b>",
+        "installing": "◽ <b>o'rnatilmoqda...</b>",
+        "success": "◽ <b>Toʻliq yuklandi! {}</b>\n<i><b>◽ Daraja:</b> {} soniya</i>",
         "origin_cfg_doc": "Git origin URL, for where to update from",
-        "btn_restart": "◍ Restart",
-        "btn_update": "◍ Update",
-        "restart_confirm": "◍ <b>Are you sure you want to restart?</b>",
+        "btn_restart": "◽ sosolash",
+        "btn_update": "◽ yangilash",
+        "restart_confirm": "◽ <b>Sosolashni tasdiqlang.</b>",
         "update_confirm": (
             "◍ <b>Are you sure you want to update?\n\n"
             '<a href="https://github.com/hikariatama/Hikka/commit/{}">{}</a> ⤑ '
@@ -54,7 +54,7 @@ class UpdaterMod(loader.Module):
         "lavhost_restart": "◍ <b>Your lavHost is restarting...\n&gt;///&lt;</b>",
         "lavhost_update": "◍ <b>Your lavHost is updating...\n&gt;///&lt;</b>",
         "heroku_update": "◍ <b>Deploying new version to Heroku...\nThis might take some time</b>",
-        "full_success": "◍ <b>Userbot is fully loaded! {}</b>\n<i>Full restart took {}s</i>",
+        "full_success": "◽ <b>Soso to'liq yangilandi! {}\n<i>◽ Daraja:</b> {} soniya</i>",
         "heroku_psycopg2_unavailable": "◍ <b>PostgreSQL database is not available.</b>\n\n<i>Do not report this error to support chat, as it has nothing to do with Hikka. Try changing database to Redis</i>",
     }
 
