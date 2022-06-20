@@ -26,12 +26,12 @@ class InfomodMod(loader.Module):
     strings = {
         "name": "Info",
         "owner": "Boshqaruvchi",
-        "version": "Soso-versiyasi",
-        "soso_update": "◍ soso-yangilash",
-        "soso_chat": "◍ soso-guruh",
-        "soso_admin": "◽ Soso-Owner: Temur Erkinov",
-        "soso_platforma": "◽ <b>Soso-Platforma</b>",
-        "soso_userbot": "◽ <b>Soso-Userbot (◕ᴗ◕✿)</b>",
+        "version": "Premium-versiyasi",
+        "soso_update": "◍ Premium-yangilash",
+        "soso_chat": "◍ Premium-guruh",
+        "soso_admin": "◽ Premium-Owner: Temur Erkinov",
+        "soso_platforma": "◽ <b>Premium-Platforma</b>",
+        "soso_userbot": "◽ <b>Premium-Userbot (◕ᴗ◕✿)</b>",
         "soso_einstein": "◽ <b>Ommaviy userbot emas:</b> shaxsiy didga moslangan hamda boshqaruvi oʻz xatti-harakatlarimga bogʻliq.",
         "_cfg_cst_msg": "Ma'lumot uchun maxsus xabar. O'z ichiga olishi mumkin {me}, {version}, {build}, {prefix}, {platform}",
         "_cfg_cst_btn": "Ma'lumot uchun maxsus tugma. O'chirish uchun tugmani bo'sh qoldiring",
@@ -40,11 +40,11 @@ class InfomodMod(loader.Module):
     
     strings_ru = {
         "owner": "Управляющий",
-        "version": "Soso-версия",
-        "soso_update": "◍ soso-обновить",
-        "soso_chat": "◍ soso-группа",
-        "soso_platforma": "◽ <b>Soso-Платформа</b>",
-        "soso_userbot": "◽ <b>Soso-Юзербот (◕ᴗ◕✿)</b>",
+        "version": "Premium-версия",
+        "soso_update": "◍ Premium-обновить",
+        "soso_chat": "◍ Premium-группа",
+        "soso_platforma": "◽ <b>Premium-Платформа</b>",
+        "soso_userbot": "◽ <b>Premium-Юзербот (◕ᴗ◕✿)</b>",
         "soso_einstein": "◽ <b>Не публичный юзербот:</b> адаптирован под личный вкус и управление зависит от моего поведения.",
         "_cfg_cst_msg": "Специальное информационное сообщение. Может включать {me}, {version}, {build}, {prefix}, {platform}",
         "_cfg_cst_btn": "Специальная кнопка для информации. Оставьте кнопку пустой, чтобы отключить ее.",
@@ -142,7 +142,7 @@ class InfomodMod(loader.Module):
             text=self._render_info(),
             reply_markup=self._get_mark(),
             **(
-                {"photo": "https://i.imgur.com/HhQTGwJ.jpeg"}
+                {"photo": "https://i.imgur.com/vs4xDKf.jpeg"}
                 if not self.config["disable_banner"]
                 else {}
             ),
