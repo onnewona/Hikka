@@ -19,14 +19,14 @@ class BackupMod(loader.Module):
     strings = {
         "name": "Backup",
         "soso_hecham": soso + "bekor qilish",
-        "period": soso + "<b>Men «Soso»</b> backuperman.",
+        "period": soso + "◽ <b>Men «Premium-Userbot»</b> backuperman.\n◽ Backup uchun vaqtni belgilang (soatda).",
         "saved": soso + "Backup period saved. You can re-configure it later with .set_backup_period",
         "never": soso + "I will not make automatic backups. You can re-configure it later with .set_backup_period",
         "invalid_args": soso + "<b>Specify correct backup period in hours, or `0` to disable</b>",
     }
 
     strings_ru = {
-        "period": soso + "<b>Я «Soso»</b> бэкапер.",
+        "period": soso + "<b>Это «Premium-Userbot»</b> бэкапер.\n◽ Установите время для бэкапа (в часах). ",
         "soso_hecham": soso + "отменить",    
         "saved": soso + "Периодичность сохранена! Ее можно изменить с помощью .set_backup_period",
         "never": soso + "Я не буду делать автоматические резервные копии. Можно отменить используя .set_backup_period",
@@ -39,7 +39,7 @@ class BackupMod(loader.Module):
         if not self.get("period"):
             await self.inline.bot.send_photo(
                 self._tg_id,
-                photo="https://i.imgur.com/vMYZQ1F.jpeg",
+                photo="http://f0664355.xsph.ru/img/info_post.png",
                 caption=self.strings("period"),
                 reply_markup=self.inline.generate_markup(
                     utils.chunks(
