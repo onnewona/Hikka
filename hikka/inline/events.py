@@ -292,7 +292,7 @@ class Events(InlineUnit):
                 and query.from_user.id
                 not in self._custom_map[query.data].get("always_allow", [])
             ):
-                await query.answer("You are not allowed to press this button!")
+                await query.answer("It's not your Premium-Userbot!!!")
                 return
 
             await self._custom_map[query.data]["handler"](
@@ -364,23 +364,23 @@ class Events(InlineUnit):
             try:
                 doc = utils.escape_html(inspect.getdoc(fun))
             except Exception:
-                doc = "🦥 No docs"
+                doc = "◽ pusto..."
 
-            _help += f"🎹 <code>@{self.bot_username} {name}</code> - {doc}\n"
+            _help += f"◽ <b>@{self.bot_username} {name}</b> - {doc}\n"
 
         if not _help:
             await inline_query.answer(
                 [
                     InlineQueryResultArticle(
                         id=utils.rand(20),
-                        title="Show available inline commands",
-                        description="You have no available commands",
+                        title="◽ Mavjud inline buyruqlar.",
+                        description="Sizda buyruqlar mavjud emas.",
                         input_message_content=InputTextMessageContent(
-                            "<b>😔 There are no available inline commands or you lack access to them</b>",
+                            "<b>◽ Mavjud inline buyruqlarga kirish imkoniga ega emassiz</b>",
                             "HTML",
                             disable_web_page_preview=True,
                         ),
-                        thumb_url="https://img.icons8.com/fluency/50/000000/info-squared.png",
+                        thumb_url="https://te.legra.ph/file/dae54fee890e06254b73f.jpg",
                         thumb_width=128,
                         thumb_height=128,
                     )
@@ -396,11 +396,11 @@ class Events(InlineUnit):
                     title="Show available inline commands",
                     description=f"You have {len(_help.splitlines())} available command(-s)",
                     input_message_content=InputTextMessageContent(
-                        f"<b>ℹ️ Available inline commands:</b>\n\n{_help}",
+                        f"<b>◽ Mavjud buyruqlar:</b>\n\n{_help}",
                         "HTML",
                         disable_web_page_preview=True,
                     ),
-                    thumb_url="https://img.icons8.com/fluency/50/000000/info-squared.png",
+                    thumb_url="https://te.legra.ph/file/dae54fee890e06254b73f.jpg",
                     thumb_width=128,
                     thumb_height=128,
                 )
