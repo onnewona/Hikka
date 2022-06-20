@@ -15,21 +15,21 @@ class HelpMod(loader.Module):
 
     strings = {
         "name": "Help",
-        "bad_module": soso + "<b><b>Module</b> <b>{}</b> <b>not found</b>",
+        "bad_module": soso + "<b><b>Modul</b> <b>{}</b> <b>topilmadi.</b>",
         "single_mod_header": soso + "<b>{}</b>:",
         "single_cmd": "\n" + soso + "<b>{}{}</b> {}",
         "undoc_cmd": soso + "No docs",
-        "all_header": soso + "{} MODS AVAILABLE ◍ {} HIDDEN",
+        "all_header": soso + "{} MODULLAR MAVJUD - {} MODULLAR BERKITILGAN",
         "mod_tmpl": "\n{} <b>{}</b>",
         "first_cmd_tmpl": ": {}",
         "cmd_tmpl": "_{}",
         "soso_temur": soso + "️Temur-Erkinov",
         "soso_userbot": soso + "️Soso-Userbot",
-        "no_mod": soso + "<b>Specify module to hide</b>",
-        "hidden_shown": soso + "<b>{} modules hidden, {} modules shown:</b>\n{}\n{}",
+        "no_mod": soso + "<b>Tushunarsiz harakat.</b>",
+        "hidden_shown": soso + "<b>{} modul(lar) berkitildi, {} modul(lar) koʻrsatilgan:</b>\n{}\n{}",
         "ihandler": "\n" + soso + "<b>{}</b> {}",
-        "undoc_ihandler": soso + "No docs",
-        "partial_load": soso + "<b>Userbot is not fully loaded, so not all modules are shown</b>",
+        "undoc_ihandler": soso + "Noma'lum",
+        "partial_load": soso + "<b>Modullar hali toʻliq yuklanmadi...</b>",
         "not_exact": soso + "<b>No exact match occured, so the closest result is shown instead</b>",
     }
 
