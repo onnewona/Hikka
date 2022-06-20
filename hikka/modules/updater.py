@@ -36,14 +36,14 @@ class UpdaterMod(loader.Module):
     strings = {
         "name": "Updater",
         "source": "◽ <b>Repos quyida:</b> <a href='{}'>here</a>",
-        "restarting_caption": "◽ <b>sosolanmoqda...</b>",
+        "restarting_caption": "◽ <b>premiumlanmoqda...</b>",
         "downloading": "◽ <b>yangilanmoqda...</b>",
         "installing": "◽ <b>o'rnatilmoqda...</b>",
         "success": "◽ <b>Toʻliq yuklandi! {}</b>\n<i><b>◽ Daraja:</b> {} soniya</i>",
         "origin_cfg_doc": "Git origin URL, for where to update from",
-        "btn_restart": "◽ sosolash",
+        "btn_restart": "◽ premiumlash",
         "btn_update": "◽ yangilash",
-        "restart_confirm": "◽ <b>Sosolashni tasdiqlang.</b>",
+        "restart_confirm": "◽ <b>Premiumlashni tasdiqlang.</b>",
         "update_confirm": (
             "◍ <b>Are you sure you want to update?\n\n"
             '<a href="https://github.com/hikariatama/Hikka/commit/{}">{}</a> ⤑ '
