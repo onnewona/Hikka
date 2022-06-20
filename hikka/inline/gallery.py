@@ -84,7 +84,7 @@ class Gallery(InlineUnit):
                                 If you want to avoid this, pass `manual_security=True`
         :param disable_security: By default, Hikka will try to inherit inline buttons security from the caller (command)
                                  If you want to disable all security checks on this gallery in particular, pass `disable_security=True`
-        :param silent: Whether the gallery must be sent silently (w/o "Loading inline gallery..." message)
+        :param silent: Whether the gallery must be sent silently (w/o "premium gallery..." message)
         :return: If gallery is sent, returns :obj:`InlineMessage`, otherwise returns `False`
         """
         with contextlib.suppress(AttributeError):
